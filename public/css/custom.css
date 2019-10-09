@@ -1,0 +1,76 @@
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid gray; 
+  border-bottom: 16px solid gray;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+    top: 40%;
+    left: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar ul li a {float: left;}
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar ul li a {float: left;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar ul li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.row .col-md-4 .card{
+  height: 100%;
+}
+
+/*a:hover{
+  text-decoration: none;
+}*/
+
+.footer {
+   position: fixed;
+   left: -10px;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+}
+
+.table-row{
+cursor:pointer;
+}
+
+
+#competitionRecentActivities .card-body:last-child, #listenerRecentActivities .card-body:last-child{
+  padding-bottom: 3px;
+}
+
+#listenerModal {
+  z-index: 999999;
+}
+
+.content {
+  padding: 30px 50px !important;
+}
+
